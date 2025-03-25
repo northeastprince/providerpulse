@@ -1,0 +1,21 @@
+EnableDefaultLinters: true
+linters:
+  Rubocop:
+    enabled: true
+    rubocop_config:
+      require:
+        - standard
+        - standard-performance
+        - standard-rails
+      inherit_gem:
+        standard: config/base.yml
+        standard-performance: config/base.yml
+        standard-rails: config/base.yml
+      Layout/TrailingEmptyLines:
+        Enabled: false
+      Layout/InitialIndentation:
+        Enabled: false
+      Lint/UselessAssignment:
+        Enabled: false
+      AllCops:
+        DisabledByDefault: true
