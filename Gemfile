@@ -28,7 +28,11 @@ group :development, :test do
   # Code Critics
   gem "bundler-audit", require: false
   gem "brakeman", require: false
-  gem "rubocop-rails-omakase", require: false
+
+  gem "standard", require: false
+  gem "standard-performance", require: false
+  gem "standard-rails", require: false
+  gem "erb_lint", require: false
 end
 
 group :development do
